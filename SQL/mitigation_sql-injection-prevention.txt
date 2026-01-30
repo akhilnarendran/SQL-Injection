@@ -1,0 +1,21 @@
+# SQL Injection Prevention
+
+## Recommended Fixes
+- Use prepared statements
+- Parameterized queries
+- Input validation
+- Least privilege DB accounts
+- Web Application Firewall (WAF)
+
+## Secure Coding Example (PHP)
+```php
+$stmt = $conn->prepare("SELECT * FROM users WHERE id = ?");
+$stmt->bind_param("i", $id);
+
+
+
+Result
+
+Prevents SQL Injection attacks.
+
+

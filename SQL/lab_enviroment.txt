@@ -1,0 +1,68 @@
+🧪 Lab Environment
+- OS: Kali Linux
+- Target: DVWA (Localhost)
+
+
+
+# DVWA Setup Guide
+
+## Requirements
+- Apache / Nginx
+- PHP
+- MySQL / MariaDB
+- Kali Linux (Recommended)
+
+## Installation Steps
+```bash
+sudo apt update
+sudo apt install dvwa
+
+
+----------------------------------------------------------
+
+
+Configuration
+
+Edit /etc/dvwa/config.inc.php
+
+Set database credentials
+
+Start Apache & MySQL
+
+sudo systemctl start apache2
+sudo systemctl start mysql
+
+--------------------------------------------------------------
+
+
+
+DVWA Security Level
+
+Set security level to Low for SQL Injection testing.
+
+Access DVWA
+http://localhost/dvwa
+
+
+
+---
+
+## 📁 lab-setup/test-environment.md
+
+```md
+# Test Environment
+
+## System Details
+- OS: Kali Linux
+- Browser: Firefox
+- Proxy: Disabled (for SQLMap)
+
+## Network
+- Localhost testing only
+- No external or real-world targets
+
+## Ethical Testing
+All attacks performed on:
+- Localhost
+- Authorized vulnerable labs
+

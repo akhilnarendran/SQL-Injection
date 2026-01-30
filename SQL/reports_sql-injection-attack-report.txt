@@ -1,0 +1,23 @@
+# SQL Injection Attack Report
+
+## Executive Summary
+A SQL Injection vulnerability was identified and exploited in DVWA using SQLMap.
+
+## Scope
+- Target: DVWA
+- Method: SQL Injection
+- Tool: SQLMap
+
+## Attack Flow
+Input Parameter → Injection → SQLMap → Database Access → Data Extraction
+
+## Findings
+- Vulnerable parameter: id
+- Database exposed
+- User data extracted
+
+## Risk Rating
+High
+
+## Recommendation
+Immediate remediation required.
